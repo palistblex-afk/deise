@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Deise Magalhães Advocacia | Advogada em Caruaru - PE</title>
+
+    <meta name="description"
+          content="Deise Magalhães Advocacia em Caruaru - PE. Atuação em Direito Trabalhista, Previdenciário, do Consumidor e Direito de Família.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: #242424;
+            background: #f8f6f1;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        :root {
+            --verde: #173b35;
+            --verde-claro: #28574e;
+            --dourado: #c9a45c;
+            --dourado-claro: #e1c98f;
+            --creme: #f8f6f1;
+            --branco: #ffffff;
+            --cinza: #666;
+            --escuro: #172522;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(23, 59, 53, 0.97);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,.08);
+        }
+
+        .nav {
+            max-width: 1180px;
+            margin: auto;
+            height: 78px;
+            padding: 0 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            color: white;
+            font-family: Georgia, serif;
+            font-size: 21px;
+            font-weight: bold;
+            letter-spacing: .4px;
+        }
+
+        .logo span {
+            display: block;
+            color: var(--dourado-claro);
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            margin-top: 2px;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            color: white;
+            font-size: 14px;
+        }
+
+        .menu a {
+            transition: .3s;
+        }
+
+        .menu a:hover {
+            color: var(--dourado-claro);
+        }
+
+        .menu-btn {
+            display: inline-block;
+            padding: 11px 18px;
+            background: var(--dourado);
+            color: var(--verde);
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .menu-btn:hover {
+            color: var(--verde) !important;
+            background: #dfbf7d;
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 760px;
+            padding: 150px 25px 90px;
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(12,35,31,.97) 0%,
+                    rgba(23,59,53,.90) 48%,
+                    rgba(23,59,53,.63) 100%
+                ),
+                url("https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm73ArtSA5n_Scy9kLQK83Nf1uBQ4SYbe9DpVFdO7UPQlkEJIJeiDs4yWfIxMuK9GlFFDxqsdvQeoZiW4DZGWBpdkQj_pAXIP_cZvkbzQDV40dfnallzZiOqf4OdBisvxg-rGU=w224-h298-k-no")
+                center/cover no-repeat;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 1180px;
+            width: 100%;
+            margin: auto;
+        }
+
+        .hero-text {
+            max-width: 720px;
+            color: white;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            color: var(--dourado-claro);
+            font-size: 13px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .hero h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(42px, 6vw, 72px);
+            line-height: 1.08;
+            font-weight: normal;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 strong {
+            color: var(--dourado-claro);
+            font-weight: normal;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: rgba(255,255,255,.86);
+            font-size: 18px;
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 23px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: .3s;
+        }
+
+        .btn-primary {
+            background: var(--dourado);
+            color: var(--verde);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            background: #dfbf7d;
+        }
+
+        .btn-outline {
+            color: white;
+            border: 1px solid rgba(255,255,255,.45);
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: var(--verde);
+        }
+
+        /* =========================
+           INFO BAR
+        ========================= */
+
+        .info-bar {
+            background: white;
+            box-shadow: 0 8px 30px rgba(0,0,0,.06);
+        }
+
+        .info-grid {
+            max-width: 1180px;
+            margin: auto;
+            padding: 28px 25px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .info-item {
+            display: flex;
+            gap: 14px;
+            align-items: center;
+        }
+
+        .info-icon {
+            width: 45px;
+            height: 45px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background: #f3ecdc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--verde);
+            font-size: 20px;
+        }
+
+        .info-item small {
+            display: block;
+            color: #888;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .info-item strong {
+            display: block;
+            color: var(--verde);
+            font-size: 14px;
+        }
+
+        /* =========================
+           SECTIONS
+        ========================= */
+
+        section {
+            padding: 95px 25px;
+        }
+
+        .container {
+            max-width: 1180px;
+            margin: auto;
+        }
+
+        .section-heading {
+            max-width: 700px;
+            margin-bottom: 50px;
+        }
+
+        .section-heading.center {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .section-label {
+            color: #a17d37;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            font-size: 12px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .section-heading h2 {
+            font-family: Georgia, serif;
+            color: var(--verde);
+            font-size: clamp(32px, 4vw, 46px);
+            font-weight: normal;
+            line-height: 1.15;
+            margin-bottom: 18px;
+        }
+
+        .section-heading p {
+            color: var(--cinza);
+            font-size: 16px;
+        }
+
+        /* =========================
+           SOBRE
+        ========================= */
+
+        .about {
+            background: var(--creme);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .about-image::after {
+            content: "";
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            border: 1px solid var(--dourado);
+            left: -18px;
+            bottom: -18px;
+            z-index: -1;
+        }
+
+        .about-content h2 {
+            font-family: Georgia, serif;
+            font-weight: normal;
+            color: var(--verde);
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            color: #666;
+            margin-bottom: 17px;
+        }
+
+        .quote {
+            border-left: 3px solid var(--dourado);
+            padding: 12px 0 12px 20px;
+            margin-top: 28px;
+            font-family: Georgia, serif;
+            color: var(--verde);
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        /* =========================
+           ÁREAS
+        ========================= */
+
+        .areas {
+            background: white;
+        }
+
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .area-card {
+            border: 1px solid #e8e5dd;
+            padding: 32px 25px;
+            background: #fff;
+            transition: .3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .area-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--dourado);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: .3s;
+        }
+
+        .area-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,.08);
+        }
+
+        .area-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .area-number {
+            color: var(--dourado);
+            font-family: Georgia, serif;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .area-card h3 {
+            color: var(--verde);
+            font-family: Georgia, serif;
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .area-card p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        /* =========================
+           DESTAQUE
+        ========================= */
+
+        .highlight {
+            background: var(--verde);
+            color: white;
+            text-align: center;
+        }
+
+        .highlight h2 {
+            max-width: 800px;
+            margin: auto auto 18px;
+            font-family: Georgia, serif;
+            font-size: clamp(31px, 4vw, 45px);
+            font-weight: normal;
+        }
+
+        .highlight p {
+            max-width: 650px;
+            margin: auto auto 30px;
+            color: rgba(255,255,255,.75);
+        }
+
+        /* =========================
+           AVALIAÇÕES
+        ========================= */
+
+        .reviews {
+            background: var(--creme);
+        }
+
+        .rating {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .stars {
+            color: #d19d32;
+            font-size: 25px;
+            letter-spacing: 4px;
+            margin-bottom: 7px;
+        }
+
+        .rating strong {
+            color: var(--verde);
+            font-size: 20px;
+        }
+
+        .rating span {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .review-card {
+            background: white;
+            padding: 30px;
+            border: 1px solid #ebe7dc;
+        }
+
+        .review-stars {
+            color: #d19d32;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .review-card p {
+            color: #666;
+            font-style: italic;
+            font-size: 15px;
+        }
+
+        /* =========================
+           LOCALIZAÇÃO / CONTATO
+        ========================= */
+
+        .contact {
+            background: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .contact-box {
+            padding: 35px;
+            background: var(--creme);
+            border-left: 4px solid var(--dourado);
+        }
+
+        .contact-box h3 {
+            font-family: Georgia, serif;
+            color: var(--verde);
+            font-size: 27px;
+            margin-bottom: 25px;
+        }
+
+        .contact-line {
+            margin-bottom: 20px;
+        }
+
+        .contact-line small {
+            display: block;
+            color: #8a8a8a;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+
+        .contact-line strong {
+            color: var(--verde);
+        }
+
+        .phone {
+            color: var(--verde);
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        .map {
+            min-height: 390px;
+            background:
+                linear-gradient(rgba(23,59,53,.18), rgba(23,59,53,.18)),
+                url("https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=H-RNhJsMOes7tl_13cx4EA&cb_client=maps_sv.tactile.gps&w=224&h=298&yaw=335.88126&pitch=0&thumbfov=100")
+                center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .map-card {
+            background: white;
+            padding: 25px 30px;
+            text-align: center;
+            box-shadow: 0 10px 35px rgba(0,0,0,.18);
+            max-width: 320px;
+        }
+
+        .map-card h3 {
+            color: var(--verde);
+            font-family: Georgia, serif;
+            margin-bottom: 7px;
+        }
+
+        .map-card p {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+
+        /* =========================
+           GALERIA
+        ========================= */
+
+        .gallery {
+            background: var(--verde);
+        }
+
+        .gallery .section-heading h2,
+        .gallery .section-heading p {
+            color: white;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1.3fr .7fr;
+            gap: 15px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 3px;
+            min-height: 250px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            min-height: 250px;
+            object-fit: cover;
+            transition: .5s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.04);
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #0e2925;
+            color: white;
+            padding: 45px 25px 25px;
+        }
+
+        .footer-grid {
+            max-width: 1180px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr;
+            gap: 50px;
+            padding-bottom: 35px;
+        }
+
+        footer h3 {
+            font-family: Georgia, serif;
+            font-weight: normal;
+            font-size: 23px;
+            margin-bottom: 12px;
+        }
+
+        footer p,
+        footer li {
+            color: rgba(255,255,255,.65);
+            font-size: 14px;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer li {
+            margin-bottom: 8px;
+        }
+
+        footer a:hover {
+            color: var(--dourado-claro);
+        }
+
+        .copyright {
+            max-width: 1180px;
+            margin: auto;
+            padding-top: 22px;
+            border-top: 1px solid rgba(255,255,255,.1);
+            color: rgba(255,255,255,.45);
+            font-size: 12px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* =========================
+           WHATSAPP
+        ========================= */
+
+        .whatsapp {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            background: #25d366;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 27px;
+            box-shadow: 0 7px 25px rgba(0,0,0,.25);
+            z-index: 999;
+            transition: .3s;
+        }
+
+        .whatsapp:hover {
+            transform: scale(1.08);
+        }
+
+        /* =========================
+           RESPONSIVO
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .menu {
+                display: none;
+            }
+
+            .hero {
+                min-height: 680px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image img {
+                height: 430px;
+            }
+
+            .areas-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .nav {
+                height: 70px;
+            }
+
+            .logo {
+                font-size: 17px;
+            }
+
+            .hero {
+                padding-top: 125px;
+                min-height: 650px;
+            }
+
+            .hero h1 {
+                font-size: 43px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            section {
+                padding: 70px 20px;
+            }
+
+            .areas-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image::after {
+                display: none;
+            }
+
+            .about-image img {
+                height: 350px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .copyright {
+                flex-direction: column;
+            }
+
+            .contact-box {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- =========================
+     MENU
+========================= -->
+
+<header>
+    <nav class="nav">
+
+        <a href="#inicio" class="logo">
+            Deise Magalhães
+            <span>Advocacia</span>
+        </a>
+
+        <div class="menu">
+            <a href="#sobre">Sobre</a>
+            <a href="#atuacao">Áreas de atuação</a>
+            <a href="#avaliacoes">Avaliações</a>
+            <a href="#contato">Contato</a>
+
+            <a
+                href="https://wa.me/5581992930087"
+                target="_blank"
+                class="menu-btn">
+                Fale conosco
+            </a>
+        </div>
+
+    </nav>
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="inicio">
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <span class="eyebrow">
+                Advocacia em Caruaru • Pernambuco
+            </span>
+
+            <h1>
+                Justiça com
+                <strong>estratégia, cuidado</strong>
+                e compromisso.
+            </h1>
+
+            <p>
+                Deise Magalhães Advocacia oferece atendimento jurídico
+                com atuação nas áreas Trabalhista, Previdenciária,
+                Consumidor e Direito de Família.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a
+                    href="https://wa.me/5581992930087"
+                    target="_blank"
+                    class="btn btn-primary">
+                    Falar pelo WhatsApp
+                </a>
+
+                <a
+                    href="#atuacao"
+                    class="btn btn-outline">
+                    Conheça nossa atuação
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     INFORMAÇÕES
+========================= -->
+
+<div class="info-bar">
+
+    <div class="info-grid">
+
+        <div class="info-item">
+
+            <div class="info-icon">★</div>
+
+            <div>
+                <small>Avaliação</small>
+                <strong>5,0 ★ — 16 avaliações</strong>
+            </div>
+
+        </div>
+
+
+        <div class="info-item">
+
+            <div class="info-icon">⌂</div>
+
+            <div>
+                <small>Localização</small>
+                <strong>Caruaru — Pernambuco</strong>
+            </div>
+
+        </div>
+
+
+        <div class="info-item">
+
+            <div class="info-icon">☎</div>
+
+            <div>
+                <small>Atendimento</small>
+                <strong>(81) 99293-0087</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     SOBRE
+========================= -->
+
+<section class="about" id="sobre">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+            <div class="about-image">
+
+                <img
+                    src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWltnYEI_JGZjBJRx7g6eCsBzeBS9BGlnjtdgGO4zE3J5yOhQGTM1JI20equ-v4j7TxnpmOr1h1Pn2jVjY-HSiZtTHJ0gunSHhfPIX1cTacCE67z-Lswigfcv0O8PdDN383QM98T=w239-h298-k-no"
+                    alt="Deise Magalhães Advocacia">
+
+            </div>
+
+
+            <div class="about-content">
+
+                <span class="section-label">
+                    Deise Magalhães Advocacia
+                </span>
+
+                <h2>
+                    Atendimento jurídico
+                    próximo e responsável.
+                </h2>
+
+                <p>
+                    A Deise Magalhães Advocacia atua em Caruaru,
+                    Pernambuco, oferecendo orientação e representação
+                    jurídica em diferentes áreas do Direito.
+                </p>
+
+                <p>
+                    O escritório possui atuação em Direito Trabalhista,
+                    Previdenciário, Direito do Consumidor e Direito de
+                    Família, buscando compreender cada situação de forma
+                    individualizada.
+                </p>
+
+                <div class="quote">
+                    "Cada caso merece atenção, estratégia e
+                    responsabilidade."
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ÁREAS DE ATUAÇÃO
+========================= -->
+
+<section class="areas" id="atuacao">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <span class="section-label">
+                Especialidades
+            </span>
+
+            <h2>
+                Áreas de atuação
+            </h2>
+
+            <p>
+                Conheça as principais áreas jurídicas atendidas
+                pela Deise Magalhães Advocacia.
+            </p>
+
+        </div>
+
+
+        <div class="areas-grid">
+
+            <article class="area-card">
+
+                <div class="area-number">01</div>
+
+                <h3>
+                    Direito Trabalhista
+                </h3>
+
+                <p>
+                    Orientação e atuação em questões relacionadas
+                    às relações de trabalho e direitos trabalhistas.
+                </p>
+
+            </article>
+
+
+            <article class="area-card">
+
+                <div class="area-number">02</div>
+
+                <h3>
+                    Direito Previdenciário
+                </h3>
+
+                <p>
+                    Atendimento jurídico relacionado a questões
+                    previdenciárias e benefícios.
+                </p>
+
+            </article>
+
+
+            <article class="area-card">
+
+                <div class="area-number">03</div>
+
+                <h3>
+                    Direito do Consumidor
+                </h3>
+
+                <p>
+                    Defesa e orientação em situações envolvendo
+                    relações de consumo e direitos do consumidor.
+                </p>
+
+            </article>
+
+
+            <article class="area-card">
+
+                <div class="area-number">04</div>
+
+                <h3>
+                    Direito de Família
+                </h3>
+
+                <p>
+                    Atendimento jurídico para questões relacionadas
+                    às relações familiares.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="highlight">
+
+    <div class="container">
+
+        <h2>
+            Precisa de orientação jurídica?
+        </h2>
+
+        <p>
+            Entre em contato para conhecer melhor o atendimento
+            da Deise Magalhães Advocacia.
+        </p>
+
+        <a
+            href="https://wa.me/5581992930087"
+            target="_blank"
+            class="btn btn-primary">
+            Entrar em contato
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     AVALIAÇÕES
+========================= -->
+
+<section class="reviews" id="avaliacoes">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <span class="section-label">
+                Reputação
+            </span>
+
+            <h2>
+                Avaliação dos clientes
+            </h2>
+
+            <p>
+                A empresa aparece no Google com avaliação
+                de 5,0 estrelas baseada em 16 avaliações.
+            </p>
+
+        </div>
+
+
+        <div class="rating">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <strong>5,0 de 5</strong>
+
+            <br>
+
+            <span>
+                16 avaliações
+            </span>
+
+        </div>
+
+
+        <div class="reviews-grid">
+
+            <div class="review-card">
+
+                <div class="review-stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    Atendimento jurídico profissional e
+                    dedicado.
+                </p>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="review-stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    Escritório com avaliação excelente
+                    pelos clientes.
+                </p>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="review-stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    Atendimento localizado em Caruaru,
+                    Pernambuco.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTATO
+========================= -->
+
+<section class="contact" id="contato">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                Fale conosco
+            </span>
+
+            <h2>
+                Entre em contato
+            </h2>
+
+            <p>
+                Para informações sobre atendimento,
+                entre em contato diretamente pelo telefone.
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <div class="contact-box">
+
+                <h3>
+                    Deise Magalhães Advocacia
+                </h3>
+
+
+                <div class="contact-line">
+
+                    <small>
+                        Telefone / WhatsApp
+                    </small>
+
+                    <a
+                        href="tel:+5581992930087"
+                        class="phone">
+                        (81) 99293-0087
+                    </a>
+
+                </div>
+
+
+                <div class="contact-line">
+
+                    <small>
+                        Localização
+                    </small>
+
+                    <strong>
+                        Maurício de Nassau,
+                        Caruaru — PE
+                    </strong>
+
+                </div>
+
+
+                <div class="contact-line">
+
+                    <small>
+                        CEP
+                    </small>
+
+                    <strong>
+                        55012-300
+                    </strong>
+
+                </div>
+
+
+                <div class="contact-line">
+
+                    <small>
+                        Plus Code
+                    </small>
+
+                    <strong>
+                        P29H+39 Caruaru, Pernambuco
+                    </strong>
+
+                </div>
+
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=P29H%2B39%20Caruaru%2C%20Pernambuco"
+                    target="_blank"
+                    class="btn btn-primary">
+                    Ver localização
+                </a>
+
+            </div>
+
+
+            <div class="map">
+
+                <div class="map-card">
+
+                    <h3>
+                        Caruaru — PE
+                    </h3>
+
+                    <p>
+                        Maurício de Nassau<br>
+                        CEP 55012-300
+                    </p>
+
+                    <a
+                        href="https://www.google.com/maps/search/?api=1&query=P29H%2B39%20Caruaru%2C%20Pernambuco"
+                        target="_blank"
+                        class="btn btn-primary">
+                        Abrir no Google Maps
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     GALERIA
+========================= -->
+
+<section class="gallery">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                Escritório
+            </span>
+
+            <h2>
+                Conheça nosso espaço
+            </h2>
+
+            <p>
+                Imagens disponibilizadas no perfil da empresa.
+            </p>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm73ArtSA5n_Scy9kLQK83Nf1uBQ4SYbe9DpVFdO7UPQlkEJIJeiDs4yWfIxMuK9GlFFDxqsdvQeoZiW4DZGWBpdkQj_pAXIP_cZvkbzQDV40dfnallzZiOqf4OdBisvxg-rGU=w224-h298-k-no"
+                    alt="Deise Magalhães Advocacia">
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWltnYEI_JGZjBJRx7g6eCsBzeBS9BGlnjtdgGO4zE3J5yOhQGTM1JI20equ-v4j7TxnpmOr1h1Pn2jVjY-HSiZtTHJ0gunSHhfPIX1cTacCE67z-Lswigfcv0O8PdDN383QM98T=w239-h298-k-no"
+                    alt="Escritório de advocacia em Caruaru">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="footer-grid">
+
+        <div>
+
+            <h3>
+                Deise Magalhães
+            </h3>
+
+            <p>
+                Advocacia em Caruaru — Pernambuco.
+                Atuação em Direito Trabalhista,
+                Previdenciário, Consumidor e Família.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Navegação
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="#inicio">Início</a>
+                </li>
+
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+
+                <li>
+                    <a href="#atuacao">
+                        Áreas de atuação
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#avaliacoes">
+                        Avaliações
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contato">
+                        Contato
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Contato
+            </h3>
+
+            <p>
+                (81) 99293-0087
+            </p>
+
+            <p>
+                Maurício de Nassau<br>
+                Caruaru — PE<br>
+                55012-300
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        <span>
+            © 2026 Deise Magalhães Advocacia.
+            Todos os direitos reservados.
+        </span>
+
+        <span>
+            Caruaru — Pernambuco
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     WHATSAPP FLUTUANTE
+========================= -->
+
+<a
+    href="https://wa.me/5581992930087"
+    target="_blank"
+    class="whatsapp"
+    aria-label="Falar pelo WhatsApp">
+    ☎
+</a>
+
+</body>
+</html>
